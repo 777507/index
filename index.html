@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en" data-theme="noir">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#07070c">
+  <meta name="description" content="A creative portfolio exploring digital experiences, visual systems, and thoughtful interaction.">
+  <title>Your Name — Creative Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div class="preloader" aria-hidden="true">
+    <span class="preloader__word">PORTFOLIO</span>
+    <span class="preloader__count">00</span>
+    <span class="preloader__line"></span>
+  </div>
+
+  <div class="scroll-progress" aria-hidden="true"></div>
+  <canvas class="particle-canvas" aria-hidden="true"></canvas>
+  <div class="cursor" aria-hidden="true"><span class="cursor__label"></span></div>
+
+  <header class="site-header">
+    <a class="wordmark" href="#home" aria-label="Your Name, home">YN<span>.</span></a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="#about">About</a>
+      <a href="#work">Work</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="header-meta">
+      <span class="availability"><i></i> Available for select projects</span>
+      <button class="theme-toggle" type="button" aria-label="Switch to light theme" aria-pressed="false">
+        <span class="theme-toggle__icon" aria-hidden="true">☼</span>
+        <span class="theme-toggle__text">Light</span>
+      </button>
+      <a class="menu-contact" href="#contact">Let's talk <span aria-hidden="true">↗</span></a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="hero__aura hero__aura--one" data-parallax="0.08"></div>
+      <div class="hero__aura hero__aura--two" data-parallax="-0.05"></div>
+      <div class="hero__content">
+        <p class="eyebrow hero__eyebrow"><span class="eyebrow__rule"></span> Independent creative practice <span class="hero__location">— [YOUR COUNTRY]</span></p>
+        <!-- REPLACE ME: Replace the name, role, and location with your details. -->
+        <h1 class="hero__title" id="hero-title">
+          <span class="hero__line"><span class="split-text">[YOUR NAME]</span></span>
+          <span class="hero__line hero__line--second"><span class="split-text hero__outline">[YOUR SPECIALTY]</span></span>
+        </h1>
+        <div class="hero__foot">
+          <p class="hero__intro">I make <span>digital things</span> feel unmistakably human.</p>
+          <a class="round-link magnetic" href="#work" aria-label="Explore selected work">
+            <span aria-hidden="true">↓</span>
+          </a>
+          <span class="hero__index">PORTFOLIO / 2025—26</span>
+        </div>
+      </div>
+      <div class="hero__side-note" aria-hidden="true">DESIGN WITH INTENT · BUILD WITH FEELING ·</div>
+      <div class="hero__scroll" aria-hidden="true"><span></span> Scroll to explore</div>
+    </section>
+
+    <section class="about section-pad" id="about" aria-labelledby="about-title">
+      <div class="section-heading">
+        <p class="section-kicker"><span>01</span> The point of view</p>
+        <span class="section-heading__aside">A little context</span>
+      </div>
+      <div class="about__layout">
+        <h2 class="about__title" id="about-title">Good work makes you <span class="text-gradient">feel</span> before it makes you think.</h2>
+        <div class="about__copy">
+          <p class="about__scrub">I’m [YOUR NAME], a [YOUR SPECIALTY] based in [YOUR COUNTRY]. I partner with ambitious people to turn sharp ideas into memorable digital experiences. Equal parts clear thinking and considered detail.</p>
+          <a class="text-link magnetic" href="#contact">A little more about me <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+      <div class="about__stamp" aria-hidden="true">
+        <span>INDEPENDENT<br>BY DESIGN</span>
+        <svg viewBox="0 0 120 120"><circle cx="60" cy="60" r="53"></circle><path d="M60 18v84M18 60h84M30 30l60 60m0-60L30 90"></path></svg>
+      </div>
+    </section>
+
+    <section class="work-section" id="work" aria-labelledby="work-title">
+      <div class="work-sticky">
+        <div class="work-topline">
+          <p class="section-kicker"><span>02</span> Selected work</p>
+          <h2 id="work-title">Proof of <span class="text-gradient">practice.</span></h2>
+          <span class="work-count">01 — 04 <span aria-hidden="true">↔</span></span>
+        </div>
+        <div class="work-track" aria-label="Selected projects">
+          <!-- REPLACE ME: Replace each project name, description, category, and art direction. -->
+          <article class="project-card" data-cursor="View" tabindex="0" aria-label="Project: Afterlight, identity and digital">
+            <div class="project-card__visual visual-afterlight">
+              <span class="project-card__art-label">A / 01<br>STILL HERE, STILL GLOWING.</span>
+              <div class="afterlight-object" aria-hidden="true"><span>AFTER<br>LIGHT</span><i></i></div>
+              <span class="project-card__year">2025</span>
+            </div>
+            <div class="project-card__meta"><span>Afterlight</span><span>Identity · Digital</span><span>↗</span></div>
+          </article>
+          <article class="project-card" data-cursor="View" tabindex="0" aria-label="Project: Field Notes, art direction and e-commerce">
+            <div class="project-card__visual visual-field">
+              <span class="project-card__art-label">B / 02<br>OBJECTS FOR OUTSIDE.</span>
+              <div class="field-object" aria-hidden="true"><span>FIELD<br>NOTES</span><i></i></div>
+              <span class="project-card__year">2024</span>
+            </div>
+            <div class="project-card__meta"><span>Field Notes</span><span>Art direction · E-commerce</span><span>↗</span></div>
+          </article>
+          <article class="project-card" data-cursor="View" tabindex="0" aria-label="Project: Soft Signal, campaign and digital">
+            <div class="project-card__visual visual-signal">
+              <span class="project-card__art-label">C / 03<br>MAKE ROOM FOR QUIET.</span>
+              <div class="signal-object" aria-hidden="true"><span>soft<br>signal</span><i></i></div>
+              <span class="project-card__year">2024</span>
+            </div>
+            <div class="project-card__meta"><span>Soft Signal</span><span>Campaign · Digital</span><span>↗</span></div>
+          </article>
+          <article class="project-card" data-cursor="View" tabindex="0" aria-label="Project: Form and Function, strategy and identity">
+            <div class="project-card__visual visual-form">
+              <span class="project-card__art-label">D / 04<br>LESS, WITH PURPOSE.</span>
+              <div class="form-object" aria-hidden="true"><span>FORM<br>&amp; FUNCTION</span><i></i></div>
+              <span class="project-card__year">2023</span>
+            </div>
+            <div class="project-card__meta"><span>Form &amp; Function</span><span>Strategy · Identity</span><span>↗</span></div>
+          </article>
+        </div>
+        <div class="work-progress" aria-hidden="true"><span></span></div>
+        <span class="work-hint">Drag your eyes →</span>
+      </div>
+    </section>
+
+    <section class="skills section-pad" id="skills" aria-labelledby="skills-title">
+      <div class="section-heading">
+        <p class="section-kicker"><span>03</span> The toolkit</p>
+        <h2 id="skills-title">Curiosity, <span class="text-gradient">in practice.</span></h2>
+      </div>
+      <div class="marquee" aria-label="Strategy, Art direction, Digital design, Creative development, Prototyping, Motion">
+        <div class="marquee__track">
+          <span>Strategy <i>✳</i> Art direction <i>✳</i> Digital design <i>✳</i> Creative development <i>✳</i> Prototyping <i>✳</i> Motion <i>✳</i></span>
+          <span aria-hidden="true">Strategy <i>✳</i> Art direction <i>✳</i> Digital design <i>✳</i> Creative development <i>✳</i> Prototyping <i>✳</i> Motion <i>✳</i></span>
+        </div>
+      </div>
+      <div class="skills__foot">
+        <p>Good instincts. Useful questions.<br>Care for the details that matter.</p>
+        <a class="text-link magnetic" href="#experience">How I got here <span aria-hidden="true">↓</span></a>
+      </div>
+    </section>
+
+    <section class="experience section-pad" id="experience" aria-labelledby="experience-title">
+      <div class="section-heading">
+        <p class="section-kicker"><span>04</span> A few chapters</p>
+        <span class="section-heading__aside">The long way around</span>
+      </div>
+      <h2 class="experience__title" id="experience-title">A practice shaped<br>by <span class="text-gradient">good people.</span></h2>
+      <div class="timeline">
+        <svg class="timeline__path" viewBox="0 0 12 500" preserveAspectRatio="none" aria-hidden="true"><path d="M6 0V500" pathLength="1"></path></svg>
+        <!-- REPLACE ME: Replace these example roles, studios, and dates. -->
+        <article class="timeline-item">
+          <span class="timeline-item__year">2022 — NOW</span><span class="timeline-item__dot"></span>
+          <div><h3>Independent Designer</h3><p>Good Company, Everywhere</p><span>Building brand worlds and digital experiences with ambitious teams.</span></div>
+        </article>
+        <article class="timeline-item">
+          <span class="timeline-item__year">2019 — 2022</span><span class="timeline-item__dot"></span>
+          <div><h3>Senior Digital Designer</h3><p>Northstar Studio, [CITY]</p><span>Led digital craft across culture, commerce, and the in-between.</span></div>
+        </article>
+        <article class="timeline-item">
+          <span class="timeline-item__year">2016 — 2019</span><span class="timeline-item__dot"></span>
+          <div><h3>Designer</h3><p>Common Practice, [CITY]</p><span>Found my footing in identity, art direction, and the joy of a good brief.</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact section-pad" id="contact" aria-labelledby="contact-title">
+      <div class="contact__orbit" aria-hidden="true"></div>
+      <div class="section-heading">
+        <p class="section-kicker"><span>05</span> Your move</p>
+        <span class="section-heading__aside">Good things start somewhere</span>
+      </div>
+      <p class="contact__overline">Have a good one in mind?</p>
+      <h2 id="contact-title">Let’s make<br>something <span class="text-gradient">matter.</span></h2>
+      <!-- REPLACE ME: Update the email and social links. -->
+      <div class="contact__actions">
+        <button class="email-button magnetic" type="button" data-email="hello@yourname.com">
+          <span class="email-button__text">hello@yourname.com</span><span aria-hidden="true">↗</span>
+        </button>
+        <span class="copy-status" aria-live="polite"></span>
+      </div>
+      <footer class="site-footer">
+        <a class="wordmark" href="#home">YN<span>.</span></a>
+        <span>Independent by design. Everywhere by nature.</span>
+        <div><a href="https://www.instagram.com/" target="_blank" rel="noreferrer">Instagram ↗</a><a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn ↗</a></div>
+        <span class="footer-year">© <span id="year">2025</span></span>
+      </footer>
+    </section>
+  </main>
+</body>
+</html>
